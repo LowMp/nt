@@ -4,15 +4,15 @@ import { motion } from 'framer-motion';
 
 export function HeroSection() {
     return (
-        <section className="relative h-screen flex items-center overflow-hidden bg-[#fffbf7]">
+        <section className="relative h-screen flex items-center overflow-hidden bg-[var(--color-background)]">
             {/* Background Gradients - Light */}
-            <div className="absolute inset-0 z-0 bg-[#fffbf7]">
-                <div className="absolute inset-0 bg-gradient-to-r from-[#fffbf7] via-[#fffbf7]/80 to-transparent z-10" />
+            <div className="absolute inset-0 z-0 bg-[var(--color-background)]">
+                <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-background)] via-[var(--color-background)]/80 to-transparent z-10" />
 
                 {/* Right Side Image Container */}
-                <div className="absolute right-0 top-0 bottom-0 w-full md:w-[60%] lg:w-[50%] h-full z-0 flex items-center justify-center bg-[#fdfbf7]">
+                <div className="absolute right-0 top-0 bottom-0 w-full md:w-[60%] lg:w-[50%] h-full z-0 flex items-center justify-center bg-[#f7f5f2]">
                     <div className="relative w-full h-full">
-                        <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#fffbf7]/10 to-[#fffbf7] z-10" />
+                        <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[var(--color-background)]/10 to-[var(--color-background)] z-10" />
                         {/* Product Image - Sharp and Clear */}
                         <img
                             src="https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?q=80&w=2671&auto=format&fit=crop"

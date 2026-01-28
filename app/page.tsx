@@ -1,20 +1,18 @@
-import { Header } from '@/components/Header';
 import { HeroSection } from '@/components/HeroSection';
 import { BusinessCards } from '@/components/BusinessCards';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white font-sans selection:bg-secondary/30">
-      <Header />
+    <main className="min-h-screen bg-[var(--color-background)] font-sans selection:bg-secondary/30">
       <HeroSection />
 
       {/* Introduction Quote */}
-      <section className="py-32 md:py-48 bg-white text-center px-6">
+      <section className="py-32 md:py-48 bg-[var(--color-background)] text-center px-6">
         <div className="max-w-3xl mx-auto">
-          <h3 className="font-serif text-3xl md:text-5xl text-slate-900 leading-tight mb-8">
+          <h3 className="font-serif text-3xl md:text-5xl text-slate-800 leading-tight mb-8">
             "진정한 기술은<br />드러나지 않습니다."
           </h3>
-          <div className="w-[1px] h-20 bg-secondary mx-auto mb-8" />
+          <div className="w-[1px] h-20 bg-secondary/80 mx-auto mb-8" />
           <p className="text-slate-500 font-light text-lg leading-relaxed">
             착용했다는 사실조차 잊게 만드는 편안함.<br />
             뉴톤은 당신의 품격을 조용히 지켜드립니다.
@@ -23,17 +21,17 @@ export default function Home() {
       </section>
 
       {/* Feature Section 1: Product Visual (Left) - Text (Right) */}
-      <section className="py-24 bg-slate-50 overflow-hidden">
+      <section className="py-24 bg-[#f8f5f1] overflow-hidden">
         <div className="container mx-auto px-6">
           <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-32">
 
             {/* Visual */}
             <div className="flex-1 w-full animate-fade-in-up">
-              <div className="relative aspect-[4/3] bg-white shadow-2xl shadow-slate-200/50 p-12 flex items-center justify-center">
+              <div className="relative aspect-[4/3] bg-[var(--color-background)] shadow-2xl shadow-slate-200/50 p-12 flex items-center justify-center">
                 {/* Product Image Placeholder */}
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?q=80&w=2671&auto=format&fit=crop')] bg-cover bg-center opacity-20 transition-transform duration-700 hover:scale-105" />
                 <div className="relative z-10 text-center">
-                  <div className="w-64 h-64 bg-[#fffbf7] border border-secondary/20 rounded-full mx-auto mb-8 flex items-center justify-center text-slate-900 font-serif text-8xl shadow-2xl shadow-slate-200">
+                  <div className="w-64 h-64 bg-[#fdfaf6] border border-secondary/20 rounded-full mx-auto mb-8 flex items-center justify-center text-slate-800 font-serif text-8xl shadow-2xl shadow-slate-200">
                     N
                   </div>
                   <div className="text-slate-400 font-serif italic text-xl">The Phantom Series</div>
@@ -43,8 +41,8 @@ export default function Home() {
 
             {/* Text */}
             <div className="flex-1">
-              <div className="text-secondary text-xs font-bold uppercase tracking-[0.2em] mb-6 block">Masterpiece</div>
-              <h2 className="font-serif text-5xl md:text-6xl text-slate-900 mb-8 leading-tight">
+              <div className="text-secondary/90 text-xs font-bold uppercase tracking-[0.2em] mb-6 block">Masterpiece</div>
+              <h2 className="font-serif text-5xl md:text-6xl text-slate-800 mb-8 leading-tight">
                 Phantom<br />Shell_
               </h2>
               <p className="text-slate-600 text-lg font-light leading-relaxed mb-12 max-w-md">
@@ -55,7 +53,7 @@ export default function Home() {
 
               <ul className="space-y-6 border-l border-slate-200 pl-8">
                 <li className="flex flex-col">
-                  <span className="font-serif text-3xl text-slate-900 mb-1">0.01mm</span>
+                  <span className="font-serif text-3xl text-slate-800 mb-1">0.01mm</span>
                   <span className="text-xs uppercase tracking-widest text-slate-500">Precision Fit</span>
                 </li>
               </ul>
@@ -65,14 +63,14 @@ export default function Home() {
       </section>
 
       {/* Feature Section 2: Text (Left) - Visual (Right) - Lifestyle Focus */}
-      <section className="py-24 bg-white overflow-hidden">
+      <section className="py-24 bg-[var(--color-background)] overflow-hidden">
         <div className="container mx-auto px-6">
           <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-32">
 
             {/* Text */}
             <div className="flex-1 order-2 lg:order-1 lg:text-right flex flex-col items-end">
-              <div className="text-secondary text-xs font-bold uppercase tracking-[0.2em] mb-6 block">Lifestyle</div>
-              <h2 className="font-serif text-5xl md:text-6xl text-slate-900 mb-8 leading-tight">
+              <div className="text-secondary/90 text-xs font-bold uppercase tracking-[0.2em] mb-6 block">Lifestyle</div>
+              <h2 className="font-serif text-5xl md:text-6xl text-slate-800 mb-8 leading-tight">
                 Clear<br />Moment_
               </h2>
               <p className="text-slate-600 text-lg font-light leading-relaxed mb-12 max-w-md">
@@ -83,7 +81,7 @@ export default function Home() {
 
               <ul className="space-y-6 border-r border-slate-200 pr-8">
                 <li className="flex flex-col">
-                  <span className="font-serif text-3xl text-slate-900 mb-1">AI Chip</span>
+                  <span className="font-serif text-3xl text-slate-800 mb-1">AI Chip</span>
                   <span className="text-xs uppercase tracking-widest text-slate-500">Noise Cancellation</span>
                 </li>
               </ul>
@@ -102,7 +100,7 @@ export default function Home() {
       <BusinessCards />
 
       {/* Footer: Minimal Luxury Light */}
-      <footer className="bg-[#fffbf7] text-slate-900 py-24 border-t border-slate-200">
+      <footer className="bg-[#f8f5f1] text-slate-900 py-24 border-t border-slate-200">
         <div className="container mx-auto px-6 text-center">
           <div className="font-serif text-3xl tracking-widest mb-12 text-secondary">N E W T O N E</div>
 

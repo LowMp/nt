@@ -1,24 +1,25 @@
 @import "tailwindcss";
 
-@theme {
+:root {
   --font-sans: 'Inter', system-ui, sans-serif;
   --font-serif: 'Times New Roman', Times, serif;
 
-  /* Light Luxury Palette */
+  /* Softened Light Luxury Palette */
   --color-primary: #475569;
-  /* Slate 600 - Soft Charcoal for text */
-  --color-secondary: #d4af37;
-  /* Metallic Gold - Accent */
+  /* Slate 600 */
+  --color-secondary: #c9a959;
+  /* Muted Gold */
 
-  --color-background: #fffbf7;
-  /* Very light warm white/cream */
+  --color-background: #fdfaf6;
+  /* Soft warm white */
   --color-foreground: #334155;
-  /* Slate 700 - Readable dark grey */
+  /* Slate 700 */
 
   --color-muted: #f1f5f9;
-  /* Slate 100 */
   --color-muted-foreground: #94a3b8;
+}
 
+@theme {
   --animate-fade-in-up: fade-in-up 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 
   @keyframes fade-in-up {

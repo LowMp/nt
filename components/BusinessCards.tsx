@@ -25,7 +25,7 @@ const items = [
 
 export function BusinessCards() {
     return (
-        <section className="bg-white py-32">
+        <section className="bg-[#fdfaf6] py-32">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-24">
                     <h3 className="text-secondary uppercase tracking-[0.3em] text-sm font-medium mb-4">Values</h3>
